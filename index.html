@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        #showdiv{
+            border: solid 1px;
+            border-radius: 5px;
+            width: 350px;
+            height: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50x;
+            background-color: rgb(214, 219, 190);    
+         }
+        
+        input[type=text]{
+            margin-top: 20px;
+            width: 290px;
+            height: 40px;
+            font-size: 20px;
+ 
+        }
+        
+        input[type=button]{
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: "楷书";
+        }
+    </style>
+    <script type="text/javascript" src="./abc.js"></script> 
+         
+    <title>Document</title>
+</head>
+<body>
+  <input type="text" id="myText" value="your name ...">
+    
+  <p>Click the "Try it" button </p>
+    
+  <button onclick="myFunction()">Try it</button>
+    
+  <p id="demo"></p>
+    
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myText").value;
+      document.getElementById("demo").innerHTML = "welcome&nbsp"+x;
+    }
+  </script>   
+  <div id="showdiv">
+    <input type="text"  id="input" readonly="readonly"><br>
+    <input type="button" value="1" onclick="test(this)">
+    <input type="button" value="2" onclick="test(this)">
+    <input type="button" value="3" onclick="test(this)">
+    <input type="button" value="4" onclick="test(this)"><br>
+    <input type="button" value="5" onclick="test(this)">
+    <input type="button" value="6" onclick="test(this)">
+    <input type="button" value="7" onclick="test(this)">
+    <input type="button" value="8" onclick="test(this)"><br>
+    <input type="button" value="9" onclick="test(this)">
+    <input type="button" value="+" onclick="test(this)">
+    <input type="button" value="-" onclick="test(this)">
+    <input type="button" value="*" onclick="test(this)"><br>
+    <input type="button" value="0" onclick="test(this)">
+    <input type="button" value="/" onclick="test(this)">
+    <input type="button" value="c" onclick="test(this)">
+    <input type="button" value="=" onclick="test(this)">   
+     
+
+
+  </div>
+  <h1>Wendy/Wang Xinyu</h1>  
+  <h2>3 common functions of JavaScript:</h2>
+  <p>Embed dynamic text in HTML pages. Respond to browser events. Read and write HTML elements. </p>
+  <h2>3 common features of JavaScript:</h2>
+  <p>(1) Scripting language. JavaScript is an interpretive script language. C, C + + and other languages are compiled before execution, while JavaScript is interpreted line by line during the running process of the program.
+
+    (2) Object based. JavaScript is an object-based scripting language. It can not only create objects, but also use existing objects.
+    
+    (3) Simple. The JavaScript language adopts the variable type of weak type, and does not make strict requirements for the data type used. It is a script language based on java basic statements and control, and its design is simple and compact.</p>
+
+</body>
+</html>
